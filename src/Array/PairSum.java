@@ -4,13 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class PairSum {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        int n=scanner.nextInt();
-        int sum= scanner.nextInt();
-        int arr[]=new int[n];
-        for (int i = 0; i < arr.length ; i++) {
-            arr[i]=scanner.nextInt();
-        }
+        int arr[]={5,4,2,3,1};
+        int sum=6;
 //        pairSum(arr,sum);
         twoSum(arr,sum);
     }
@@ -29,7 +24,7 @@ public class PairSum {
    }
     // Approach 2
     // 2's Pointer ------O(nlogn)
-    // No duplicates are occedured
+    // No duplicates
     static void twoSum(int arr[],int sum)
     {
         Arrays.sort(arr);
